@@ -1,0 +1,228 @@
+/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
+@font-face {
+    font-family: GraphikMedium;
+    src: url(../font/Graphik-Medium.ttf) format('opentype');
+}
+@font-face {
+    font-family: GraphikRegular;
+    src: url(../font/Graphik-Regular.woff) format('opentype');
+}
+@font-face {
+    font-family: TiemposHeadline;
+    src: url(../font/TiemposHeadline-Semibold.woff) format('opentype');
+}
+@font-face {
+    font-family: TheinhardtLT;
+    src: url(../font/Theinhardt-Lt.woff) format('opentype');
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+header{
+    height: 60px;
+    position: relative;
+}
+nav{
+    padding: 0 5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sites a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: #2B2C2E;
+    font-family: 'GraphikRegular';
+    font-size: .85rem;
+    transition: color .4s;
+}
+.sites a:hover{
+    color: #848689;
+}
+nav>a{
+    font-family: 'GraphikMedium';
+    text-decoration: none;
+    color: #2B2C2E;
+    font-size: .95rem;
+    border: 2px solid #2B2C2E;
+    border-radius: 4px;
+    padding: 5px 40px;
+    transition: background .6s, color .4s, border .4s;
+}
+nav>a:hover{
+    background: #3D3E41;
+    color: #fff;
+    border: 2px solid #3D3E41;
+}
+.logo{
+    font-family: 'TiemposHeadline';
+    color: #27282A;
+    font-size: 1.4rem;
+    position: absolute;
+    margin: 0;
+    top: calc((60px - 31px) / 2);
+    left: calc(50% - 163.3px / 2);
+}
+h1{
+    font-family: 'TiemposHeadline';
+    font-size: 3rem;
+    color: #27282A;
+    margin: 0;
+}
+h2{
+    font-family: 'GraphikRegular';
+    font-size: 2rem;
+    color: #2B2C2E;
+    width: 90%;
+    margin: 10vh auto 0;
+    text-align: center;
+}
+h3{
+    font-family: 'GraphikMedium';
+    font-size: 1.4rem;
+    line-height: 27px;
+    color: #2B2C2E;
+}
+h4{
+    font-family: 'TheinhardtLT';
+    font-size: 3.5rem;
+    color: #2B2C2E;
+}
+p{
+    font-family: 'TheinhardtLT';
+    font-size: 1.2rem;
+    color: #848689;
+}
+.picture{
+    background: url(../img/home_hero.png) center/cover no-repeat;
+    height: 80vh;
+}
+.price{
+    width: 85%;
+    margin: 25vh auto 30vh;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-rows: 5v 5vh;
+}
+.price h3{
+    grid-row: 1/3;
+    padding-right: 7%;
+    margin: 0;
+}
+.price h4{
+    grid-row: 1/2;
+    margin: 0;
+}
+.price p{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: 0;
+}
+#deliverables{
+    padding: 0 7.5% 10vh 7.5%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+}
+#deliverables h3{
+    margin: 0;
+}
+#deliverables div:not(.empty){
+    grid-row: 1/-1;
+    background: url(../img/home_deliverables.png) center/cover no-repeat;
+}
+#how{
+    background: #e3e7ec;
+    height: 65vh;
+    width: 75%;
+    margin: 5vh auto 0;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 2fr 2fr 2fr 2fr;
+}
+#how h1:nth-of-type(1){
+    margin-top: 60px;
+}
+#how li{
+    font-family: 'TheinhardtLT';
+    font-size: 1rem;
+    color: #848689;
+}
+#how p{
+    font-size: 1rem;
+}
+#how div{
+    width: 100%;
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    background: url(../img/home_how_it_works.png) center/cover no-repeat;
+}
+#critique{
+    padding: 20vh 25% 25vh;
+    text-align: center;
+    position: relative;
+}
+#critique h1{
+    font-size: 2.5rem;
+    margin-bottom: 5vh;
+}
+#critique p{
+    font-size: 1rem;
+    line-height: 30px;
+    margin-bottom: 20vh;
+}
+#critique div{
+    background: url(../img/28.png) center/cover no-repeat;
+    height: 35vh;
+    margin: 0;
+}
+#critique h4{
+    font-family: 'GraphikMedium';
+    color: #848689;
+    font-size: 1.1rem;
+    margin: 0;
+    width: 50%;
+    text-align: left;
+    line-height: 40px;
+}
+#critique img{
+    position: absolute;
+    width: 40%;
+    bottom: 10vh;
+}
+#questions{
+    margin: 0 7.5%;
+    padding: 15vh 0 5vh;
+    border-top: 2px solid #9FA2A7;
+}
+#questions h1{
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+#questions div{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+#questions div img{
+    width: 90px;
+    margin: 0 10px 0 15%;
+}
+#questions div p{
+    margin: 0;
+    font-size: .9rem;
+    font-family: 'GraphikMedium';
+}
+#questions div p a{
+    text-decoration: none;
+    color: #2B2C2E;
+}
