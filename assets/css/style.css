@@ -165,7 +165,7 @@ p{
     background: url(../img/home_how_it_works.png) center/cover no-repeat;
 }
 #critique{
-    padding: 20vh 25% 25vh;
+    padding: 20vh 25% 0;
     text-align: center;
     position: relative;
 }
@@ -193,9 +193,11 @@ p{
     line-height: 40px;
 }
 #critique img{
-    position: absolute;
-    width: 40%;
-    bottom: 10vh;
+    /* position: absolute; */
+    
+    /* bottom: 10vh; */
+    width: 80%;
+    transform: translate(50%, -23vh);
 }
 #questions{
     margin: 0 7.5%;
