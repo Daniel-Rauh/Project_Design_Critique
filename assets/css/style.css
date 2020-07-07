@@ -165,7 +165,7 @@ p{
     background: url(../img/home_how_it_works.png) center/cover no-repeat;
 }
 #critique{
-    padding: 20vh 25% 0;
+    padding: 20vh 25% 30vh;
     text-align: center;
     position: relative;
 }
@@ -193,11 +193,9 @@ p{
     line-height: 40px;
 }
 #critique img{
-    /* position: absolute; */
-    
-    /* bottom: 10vh; */
-    width: 80%;
-    transform: translate(50%, -23vh);
+    position: absolute;
+    bottom: 15vh;
+    width: 40%;
 }
 #questions{
     margin: 0 7.5%;
@@ -227,4 +225,18 @@ p{
 #questions div p a{
     text-decoration: none;
     color: #2B2C2E;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.propeller:active{
+    animation: spin .4s infinite linear;
 }
